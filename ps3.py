@@ -414,9 +414,9 @@ def play_game(word_list):
             want_change = mega_input('Would you like to replay the hand? ', "Please enter 'yes' or 'no'",
                                      [['yes', 'no']])
             if want_change == 'yes':
-                letter = False
-            elif letter == 'no':
-                letter = True
+                want_change = False
+            elif want_change == 'no':
+                want_change = True
     print('Total score over all hands: ' + str(score))
 
 
